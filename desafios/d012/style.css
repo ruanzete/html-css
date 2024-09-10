@@ -1,11 +1,23 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nerko+One&family=Playpen+Sans:wght@100..800&display=swap');
+
+:root{
+    --font1:Verdana, Geneva, Tahoma, sans-serif;
+    --font2:"Nerko One", cursive;
+    --font3: "Playpen Sans", cursive;
+}
+
 *{ 
     margin: 0px;
     padding: 0px;
+   
 }
 html, body{
     min-height: 100vh;
    background-color: lightgoldenrodyellow;
+  
     
 }
 header{
@@ -17,6 +29,7 @@ header{
 header > h1{
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--font2);
 }
 header >  p{
     padding-bottom: 50px;
@@ -35,6 +48,10 @@ section{
     padding-bottom: 10vh;
     line-height: 1.8em;
     padding-left: 30px;
+    font-family: var(--font3);
+    font-size: 3vw;
+    
+    
 }
 section.normal{
     background-color: white;
@@ -45,8 +62,9 @@ section.imagem{
     color: white;
 }
 section.imagem > p{
+    display: inline-block;
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.678);
-    width: 400px;
     border-radius: 3px;
     
 }
