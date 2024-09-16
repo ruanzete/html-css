@@ -11,6 +11,7 @@
         table{
             border-collapse: collapse ;
             width: 500px;
+            position: relative;
         }
         caption{
             border: 1px solid black;
@@ -19,6 +20,7 @@
             padding: 10px;
             background-color: lightgrey;
         }
+        
     
         td, th{
             border: 1px solid black;
@@ -28,9 +30,20 @@
         td.num{
             text-align: right;
         }
+        
         thead, tfoot{
             background-color: gray;
             color: white;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        
+        }
+
+        tbody > tr:nth-child(2n){
+            background-color: lightgray;
         }
     </style>
 </head>
@@ -111,16 +124,71 @@
             <td>Amazonas</td>
             <td class="num">4 144 597</td>
            </tr>
-           
+           <tr>
+            <td>Para
+            <td class="num">8 602 865</td>
+           </tr>
+           <tr>
+            <td>Santa Catarina</td>
+            <td class="num">7 164 788</td>
+           </tr>
 
+           <tr>
+            <td>Maranhao</td>
+            <td class="num">7 075 181</td>
+           </tr>
+
+           <tr>
+            <td>Goias</td>
+            <td class="num">7 018 354</td>
+           </tr>
+           
+           <tr>
+            <td>Amazonas</td>
+            <td class="num">4 144 597</td>
+           </tr>
+           <td>Para
+            <td class="num">8 602 865</td>
+           </tr>
+           <tr>
+            <td>Santa Catarina</td>
+            <td class="num">7 164 788</td>
+           </tr>
+
+           <tr>
+            <td>Maranhao</td>
+            <td class="num">7 075 181</td>
+           </tr>
+
+           <tr>
+            <td>Goias</td>
+            <td class="num">7 018 354</td>
+           </tr>
+           
+           <tr>
+            <td>Amazonas</td>
+            <td class="num">4 144 597</td>
+           </tr>
 
         </tbody>
         <tfoot>
-            <tr>
-                <th>Total de Habitantes</th>
-                <td><strong>200.000.00</strong></td>
-            </tr>
-        </tfoot>
+        <tr>
+            <th>Total de Habitantes</th>
+            <td><strong>200.000.00</strong></td>
+        </tr>
+    </tfoot>
+    
+        <table>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In iusto dicta iste. Eos ea facere unde ullam veniam voluptate omnis quas, praesentium magnam optio quo! Officia repellat fugit perferendis dolor. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum culpa ipsum harum nam officiis itaque corporis totam eos reiciendis ut qui, explicabo autem assumenda illum molestias consequatur. Non, amet illo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima voluptates, delectus aliquam at aperiam dolore laborum, modi maxime est error dolorem mollitia. Accusamus velit, odio numquam expedita incidunt vero magni. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus non enim corrupti nulla maxime! Illum voluptatem iusto ad? Iusto tenetur ad reiciendis veritatis provident accusantium fugiat maiores iste? Dolorem, repellat?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In iusto dicta iste. Eos ea facere unde ullam veniam voluptate omnis quas, praesentium magnam optio quo! Officia repellat fugit perferendis dolor. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum culpa ipsum harum nam officiis itaque corporis totam eos reiciendis ut qui, explicabo autem assumenda illum molestias consequatur. Non, amet illo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima voluptates, delectus aliquam at aperiam dolore laborum, modi maxime est error dolorem mollitia. Accusamus velit, odio numquam expedita incidunt vero magni. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus non enim corrupti nulla maxime! Illum voluptatem iusto ad? Iusto tenetur ad reiciendis veritatis provident accusantium fugiat maiores iste? Dolorem, repellat?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In iusto dicta iste. Eos ea facere unde ullam veniam voluptate omnis quas, praesentium magnam optio quo! Officia repellat fugit perferendis dolor. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum culpa ipsum harum nam officiis itaque corporis totam eos reiciendis ut qui, explicabo autem assumenda illum molestias consequatur. Non, amet illo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima voluptates, delectus aliquam at aperiam dolore laborum, modi maxime est error dolorem mollitia. Accusamus velit, odio numquam expedita incidunt vero magni. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus non enim corrupti nulla maxime! Illum voluptatem iusto ad? Iusto tenetur ad reiciendis veritatis provident accusantium fugiat maiores iste? Dolorem, repellat?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In iusto dicta iste. Eos ea facere unde ullam veniam voluptate omnis quas, praesentium magnam optio quo! Officia repellat fugit perferendis dolor. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum culpa ipsum harum nam officiis itaque corporis totam eos reiciendis ut qui, explicabo autem assumenda illum molestias consequatur. Non, amet illo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima voluptates, delectus aliquam at aperiam dolore laborum, modi maxime est error dolorem mollitia. Accusamus velit, odio numquam expedita incidunt vero magni. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus non enim corrupti nulla maxime! Illum voluptatem iusto ad? Iusto tenetur ad reiciendis veritatis provident accusantium fugiat maiores iste? Dolorem, repellat?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In iusto dicta iste. Eos ea facere unde ullam veniam voluptate omnis quas, praesentium magnam optio quo! Officia repellat fugit perferendis dolor. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum culpa ipsum harum nam officiis itaque corporis totam eos reiciendis ut qui, explicabo autem assumenda illum molestias consequatur. Non, amet illo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima voluptates, delectus aliquam at aperiam dolore laborum, modi maxime est error dolorem mollitia. Accusamus velit, odio numquam expedita incidunt vero magni. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus non enim corrupti nulla maxime! Illum voluptatem iusto ad? Iusto tenetur ad reiciendis veritatis provident accusantium fugiat maiores iste? Dolorem, repellat?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In iusto dicta iste. Eos ea facere unde ullam veniam voluptate omnis quas, praesentium magnam optio quo! Officia repellat fugit perferendis dolor. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum culpa ipsum harum nam officiis itaque corporis totam eos reiciendis ut qui, explicabo autem assumenda illum molestias consequatur. Non, amet illo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima voluptates, delectus aliquam at aperiam dolore laborum, modi maxime est error dolorem mollitia. Accusamus velit, odio numquam expedita incidunt vero magni. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus non enim corrupti nulla maxime! Illum voluptatem iusto ad? Iusto tenetur ad reiciendis veritatis provident accusantium fugiat maiores iste? Dolorem, repellat?</p>
+        </table>
+       
+            
+       
 
 
 
