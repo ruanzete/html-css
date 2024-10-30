@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +7,46 @@
 </head>
 <body>
     <h1>Exemplo de Fomrulario</h1>
-    <form action="cadastro.php">
-       <fieldset>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="iest">Estado: </label>
+            <select name="estado" id="iest">
+
+                <option value="" selected> --- Escolha ---</option>
+                <optgroup label="Regiao Sudeste">
+                    <option value="SP">Sao Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                </optgroup>
+
+                <optgroup label="Regiao Nordeste">
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="PE">Pernabuco</option>
+                    <option value="MA">Maranhao</option>
+                </optgroup>
+            </select>
+            </p>
+            
+            <p>
+                <label for="iprof">Profissao</label>
+                <input type="text" name="prof" id="iprof" list="lstprof">
+                <datalist id="lstprof">
+                    <option value="ADM">Administrador</option>
+                    <option value="CONT">Contabilista</option>
+                    <option value="DEV">Desenvolvedor</option>
+                    <option value="PROF">Professor</option>
+                </datalist>
+            </p>
+
+            <p>
+                <label for="imsg">Mensagem: </label> <br>
+                <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="sua mensa"></textarea>
+            </p>
         
-       </fieldset> 
+            <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Resetar">
+            </p>
 
     </form>
 </body>
