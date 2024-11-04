@@ -1,2 +1,10 @@
 @charset "UTF-8";
+
 /* aparelho em pe (portrait)*/
+
+body {
+    background: url(../imagens/cev-portrait.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
