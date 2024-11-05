@@ -13,6 +13,7 @@
     main::after{
         content: 'impressao feita no site www.meusite.com';
         text-decoration: overline;
+        
     
     }
     img#phone{display: none; }
