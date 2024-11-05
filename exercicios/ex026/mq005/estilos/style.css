@@ -4,25 +4,27 @@
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
-    
+    box-sizing: border-box;
     
 }
 body, html{
     background-color: lightgray;
+
 }
 
 header{
 background-color: darkgray;
 
-
 }
-header h1{
+header > h1{
     text-align: center;
-    font-size: 2.3em;
+    padding: 10px;
+    
+   
 }
 span#burg{
     background-color: lightgray;
-    color: white;
+    color: rgb(0, 0, 0);
     width: 100vw;
     text-align: center;
     padding: 10px;
@@ -30,24 +32,25 @@ span#burg{
 }
 span#burg:hover{
     background-color: rgb(126, 122, 122);
-    color: black;
+    color: rgb(255, 255, 255);
 }
 menu{
     display: none;
 }
-menu ul{
+menu > ul{
     list-style: none; 
-    border-top: 1px solid rgb(100, 99, 99);
+    
 }
 menu > ul >li > a{
     display: block;
     padding: 10px;
+    
     text-decoration: none;
     text-align: center;
     font-weight: bold;
     background-color: rgb(126, 122, 122);
     color: white;
-    border-top: 1px solid black;
+    
 }
 menu > ul > li > a:hover{
     background-color: rgb(201, 201, 201);
@@ -65,7 +68,7 @@ main{
 article h2{
     padding-bottom: 20px;
     text-align: center;
-    font-size: 2em;
+   
 }
 article p{
     text-align: justify;
